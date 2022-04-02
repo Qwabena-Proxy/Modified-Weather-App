@@ -17,7 +17,7 @@ try:
     lat = lat_lon_arr[0]
     lon = lat_lon_arr[1]
     #Network request for users location
-    response = rq.get(f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=d6d8e48737f11e323f1457b6fe82755f")
+    response = rq.get(f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}")
     check = 1
   else:
     #Network Request
