@@ -21,7 +21,7 @@ try:
     check = 1
   else:
     #Network Request
-    response = rq.get(f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid=d6d8e48737f11e323f1457b6fe82755f")
+    response = rq.get(f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={API_KEY}")
   if response.status_code == 200:
     print()
     data = response.json()
