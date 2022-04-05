@@ -4,7 +4,7 @@ from time import sleep as sp
 check = 0
 try:
   print("Loading...")
-  response = rq.get("https://api.openweathermap.org/data/2.5/weather?q={NAME_OF_THE_AREA}&appid={API_KEY}")
+  response = rq.get("https://api.openweathermap.org/data/2.5/weather?q=London&appid={API_KEY}")
   location = input('Enter location:')
   sp(.2)
   if location == '!location':
