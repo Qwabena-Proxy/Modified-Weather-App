@@ -49,5 +49,3 @@ if check == 1:
 else:
   G_statement = f'The weather 🌥 at {Area_Name} in {country} is {Description}. And the temperature is {Temp:0.2f} degree celsius.'
   print(G_statement)
-
-
